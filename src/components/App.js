@@ -1,13 +1,16 @@
-import React from 'react' // ES6
+import React from 'react'
 
-// Class based component
-// Function based component
-
-// component, file, class = Sama
+import SearchBar from './SearchBar'
+import ImageList from './ImageList'
 
 class App extends React.Component { // WAJIB RETURN SATU BUAH DIV
     render(){
-        return <div><h1>App Component</h1></div> // bukan html, JSX
+        return (
+            <div>
+                <SearchBar/>
+                <ImageList/>
+            </div>
+        )
     }
 }
 
